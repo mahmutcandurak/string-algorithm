@@ -10,18 +10,18 @@ public class Main {
 
     public static String algorithm(String str, int repeat) {
 
-        char [] strarray = str.toCharArray();
+        char [] strArray = str.toCharArray();
 
-        for (int i = 0; i < strarray.length; i++) {
+        for (int i = 0; i < strArray.length; i++) {
             int count = 1;
 
-            for (int j = i+1; j < strarray.length; j++) {
-                if (strarray[i] == strarray[j] && strarray[i] !=' ')
+            for (int j = i+1; j < strArray.length; j++) {
+                if (strArray[i] == strArray[j] && strArray[i] !=' ')
                     count++;
             }
 
             if (count >= repeat) {
-                str = str.replace(String.valueOf(strarray[i]), " ");
+                str = str.replace(String.valueOf(strArray[i]), " ");
             }
         }
         return str;
@@ -39,6 +39,5 @@ public class Main {
         Sentence = input.nextLine();
 
         System.out.println(algorithm(Sentence, repeat));
-
     }
 }
