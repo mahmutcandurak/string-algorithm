@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class Main {
 
     public static String Sentence;
-    public static Integer repeat;
 
 
     public static String algorithm(String str, int repeat) {
@@ -40,7 +39,6 @@ public class Main {
         Sentence = input.nextLine();
 
         System.out.println(algorithm(Sentence, repeat));
-
 
     }
 }
