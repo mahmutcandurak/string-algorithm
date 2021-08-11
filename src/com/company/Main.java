@@ -35,7 +35,7 @@ public class Main {
         int repeat = intinput.nextInt();
 
         Scanner input = new Scanner(System.in);
-        System.out.println("Please enter sentences");
+        System.out.println("Please enter sentence");
         Sentence = input.nextLine();
 
         System.out.println(algorithm(Sentence, repeat));
