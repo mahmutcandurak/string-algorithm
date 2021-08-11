@@ -31,11 +31,11 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner intinput = new Scanner(System.in);
-        System.out.println("please choose your number");
+        System.out.println("please enter your number");
         int repeat = intinput.nextInt();
 
         Scanner input = new Scanner(System.in);
-        System.out.println("Please give some sentences");
+        System.out.println("Please enter sentences");
         Sentence = input.nextLine();
 
         System.out.println(algorithm(Sentence, repeat));
